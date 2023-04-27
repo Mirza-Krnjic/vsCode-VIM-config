@@ -1,5 +1,3 @@
-Sure, here's a sample README.md file you can use:
-
 # VIM Emulator Config for VS Code
 
 🎉 Welcome to my custom VIM emulator config for VS Code! 🎉
