@@ -91,7 +91,7 @@ First, you'll need to install the VIM Emulator extension from the [Visual Studio
   "workbench.settings.enableNaturalLanguageSearch": false,
   "update.showReleaseNotes": false,
 
-  "editor.cursorSurroundingLines": 16, //here I change ofset lines
+  "editor.cursorSurroundingLines": 16,
   "editor.wordWrap": "off",
   "diffEditor.wordWrap": "off",
   "editor.fontSize": 13,
