@@ -14,7 +14,7 @@ First, you'll need to install the VIM Emulator extension from the [Visual Studio
 
 ### Step 2: Replace Global Settings
 
-<img src="./scrns/demo2.png"/>
+<img src="./scrns/demo2.png" width="300"/>
 
 Next, you'll need to replace the global `settings.json` file with the one provided in this repo. This file contains some custom settings that will optimize your VIM experience. You can do this by following these steps:
 
