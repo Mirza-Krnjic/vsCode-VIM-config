@@ -1,0 +1,89 @@
+{
+  "workbench.colorCustomizations": {
+    "editor.background": "#000000",
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f",
+    "tab.activeBorderTop": "#ff0000",
+    "editorCursor.foreground": "#ff0000",
+    "editorLineNumber.activeForeground": "#ff0000",
+    "editorLineNumber.foreground": "#767676"
+  },
+
+    // disables all italic fonts
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "*": {
+        "italic": false
+      }
+    }
+  }
+
+  "vim.leader": " ",
+  "vim.useSystemClipboard": true,
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.files.action.focusFilesExplorer"]
+    },
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": [";"],
+      "after": ["0"]
+    },
+    {
+      "before": ["J"],
+      "after": ["8", "<down>"]
+    },
+    {
+      "before": ["K"],
+      "after": ["8", "<up>"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    }
+  ],
+
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.mouseWheelZoom": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Just Black",
+  "editor.minimap.enabled": false,
+
+  "workbench.sideBar.location": "right",
+
+  "breadcrumbs.enabled": false,
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "update.showReleaseNotes": false,
+
+  "editor.cursorSurroundingLines": 16,
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "editor.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.fontFamily": "Menlo for Powerline, PowerlineSymbols",
+  "settingsSync.ignoredSettings": ["editor.guides.indentation"],
+  "search.searchOnType": false,
+  "workbench.statusBar.visible": false,
+  "editor.scrollbar.horizontalScrollbarSize": 4,
+  "editor.scrollbar.verticalScrollbarSize": 4,
+  "workbench.activityBar.visible": false
+}
