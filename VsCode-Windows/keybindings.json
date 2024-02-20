@@ -37,8 +37,8 @@
     "when": "explorerViewletVisible"
   },
   {
-    "key": "ctrl+b",
-    "command": "-workbench.action.toggleSidebarVisibility"
+    "key": "ctrl+n",
+    "command": "workbench.action.toggleStatusbarVisibility"
   },
   {
     "key": "ctrl+1",
@@ -100,5 +100,24 @@
     "key": "a",
     "command": "explorer.newFile",
     "when": "explorerViewletFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen",
+    "when": "!inQuickOpen"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.panel.chatSidebar"
   }
 ]
