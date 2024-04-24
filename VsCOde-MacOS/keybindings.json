@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
   {
     "key": "shift+j",
@@ -12,7 +11,8 @@
   },
   {
     "key": "alt+f",
-    "command": "workbench.action.focusSideBar"
+    "command": "workbench.action.focusSideBar",
+    "when": "!terminalFocus"
   },
   {
     "key": "cmd+e",
@@ -31,7 +31,7 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+;",
+    "key": "cmd+;",
     "command": "workbench.files.action.collapseExplorerFolders",
     "when": "explorerViewletVisible"
   },
@@ -99,6 +99,52 @@
     "key": "a",
     "command": "explorer.newFile",
     "when": "explorerViewletFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.quickOpen",
+    "when": "!inQuickOpen"
+  },
+  {
+    "key": "cmd+i",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+h",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "cmd+h",
+    "command": "-extension.vim_ctrl+h",
+    "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+  },
+  {
+    "key": "cmd+shift+h",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "cmd+shift+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "alt+\\",
+    "command": "-editor.action.inlineSuggest.trigger",
+    "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "cmd+h",
+    "command": "github.copilot.toggleStatusMenu"
+  },
+  {
+    "key": "cmd+shift+i",
+    "command": "inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
   }
 ]
-

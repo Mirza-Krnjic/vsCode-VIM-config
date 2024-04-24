@@ -1,15 +1,15 @@
 {
   "workbench.colorCustomizations": {
-    "editor.background": "#000000",
-    "editor.lineHighlightBackground": "#1073cf00",
-    "editor.lineHighlightBorder": "#9fced11f",
-    "tab.activeBorderTop": "#ff0000",
-    "editorCursor.foreground": "#ff0000",
-    "editorLineNumber.activeForeground": "#ff0000",
-    "editorLineNumber.foreground": "#767676",
-    "editorHoverWidget.border": "#ff0000",
-    "peekView.border": "#19d700",
-    "peekViewResult.background": "#151515"
+    // "editor.background": "#000000",
+    // "editor.lineHighlightBackground": "#1073cf00",
+    // "editor.lineHighlightBorder": "#9fced11f",
+    // "tab.activeBorderTop": "#ff0000",
+    // "editorCursor.foreground": "#ff0000",
+    // "editorLineNumber.activeForeground": "#ff0000",
+    // "editorLineNumber.foreground": "#767676",
+    // "editorHoverWidget.border": "#ff0000",
+    // "peekView.border": "#19d700",
+    // "peekViewResult.background": "#151515"
   },
 
   // disables all italic fonts
@@ -21,6 +21,9 @@
       }
     }
   },
+
+  //added on linux mint
+  "keyboard.dispatch": "keyCode",
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false,
@@ -99,44 +102,42 @@
     }
   ],
 
-  "vim.scrolloff": 5,
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.mouseWheelZoom": false,
   "explorer.confirmDragAndDrop": false,
+
   "workbench.sideBar.location": "right",
-  "breadcrumbs.enabled": false,
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.tabSizing": "shrink",
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "update.showReleaseNotes": false,
-  "editor.cursorSurroundingLines": 5,
+
+  "editor.cursorSurroundingLines": 8,
   "editor.wordWrap": "off",
   "diffEditor.wordWrap": "off",
+  "terminal.integrated.fontSize": 13,
   "editor.semanticHighlighting.enabled": true,
   "editor.accessibilitySupport": "off",
+  "terminal.integrated.fontFamily": "Menlo for Powerline, PowerlineSymbols",
   "search.searchOnType": false,
   "editor.scrollbar.horizontalScrollbarSize": 4,
   "editor.scrollbar.verticalScrollbarSize": 4,
   "workbench.editor.enablePreview": false,
   "window.menuBarVisibility": "toggle",
   "editor.fontSize": 15,
+  "editor.stickyScroll.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "'Cascadia Mono'",
-  "github.copilot.editor.enableAutoCompletions": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "workbench.colorTheme": "Just Black",
-  "editor.minimap.enabled": false,
-  "workbench.statusBar.visible": false,
+  "editor.lightbulb.enabled": "off",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "workbench.activityBar.location": "hidden"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.statusBar.visible": false,
+  "workbench.colorTheme": "Tokyo Night",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false
 }
