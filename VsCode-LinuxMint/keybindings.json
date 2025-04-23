@@ -1,6 +1,11 @@
 // Place your key bindings in this file to override the defaults
 [
   {
+    "key": "capslock",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
     "key": "shift+j",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
@@ -122,14 +127,6 @@
     "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
   },
   {
-    "key": "ctrl+shift+h",
-    "command": "workbench.panel.chat.view.copilot.focus"
-  },
-  {
-    "key": "ctrl+shift+h",
-    "command": "-workbench.action.replaceInFiles"
-  },
-  {
     "key": "alt+\\",
     "command": "-editor.action.inlineSuggest.trigger",
     "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
@@ -143,9 +140,33 @@
     "command": "inlineChat.start",
     "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
   },
+  // {
+  //   "key": "ctrl+i",
+  //   "command": "-inlineChat.start",
+  //   "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  // },
   {
-    "key": "ctrl+i",
-    "command": "-inlineChat.start",
-    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.toggleStatusbarVisibility",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-workbench.panel.chatEditing",
+    "when": "workbench.panel.chat.view.edits.active"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.panel.chat",
+    "when": "workbench.panel.chat.view.copilot.active"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-workbench.panel.chat",
+    "when": "workbench.panel.chat.view.copilot.active"
   }
 ]
