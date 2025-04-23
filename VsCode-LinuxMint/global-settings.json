@@ -1,6 +1,6 @@
 {
   "workbench.colorCustomizations": {
-    // "editor.background": "#000000",
+    // "editor.background": "#000000"
     // "editor.lineHighlightBackground": "#1073cf00",
     // "editor.lineHighlightBorder": "#9fced11f",
     // "tab.activeBorderTop": "#ff0000",
@@ -12,17 +12,17 @@
     // "peekViewResult.background": "#151515"
   },
 
-  // disables all italic fonts
-  "editor.semanticTokenColorCustomizations": {
-    "enabled": true,
-    "rules": {
-      "*": {
-        "italic": false
-      }
-    }
-  },
+  // Disables all italic fonts
+  // "editor.semanticTokenColorCustomizations": {
+  //   "enabled": true,
+  //   "rules": {
+  //     "*": {
+  //       "italic": false
+  //     }
+  //   }
+  // },
 
-  //added on linux mint
+  // Added on linux mint
   "keyboard.dispatch": "keyCode",
   "vim.handleKeys": {
     "<C-a>": false,
@@ -34,7 +34,6 @@
     "<leader>e": false,
     "<leader>w": false
   },
-  // end linux mint
 
   // VIM config
   "vim.leader": " ",
@@ -54,36 +53,8 @@
       "after": ["0"]
     },
     {
-      "before": ["J"],
-      "after": ["5", "<down>"]
-    },
-    {
-      "before": ["K"],
-      "after": ["5", "<up>"]
-    },
-    {
       "before": ["<leader>", "e"],
       "commands": ["workbench.files.action.focusFilesExplorer"]
-    },
-    {
-      "before": ["<leader>", "w"],
-      "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": ["<leader>", "l"],
-      "commands": ["workbench.action.focusNextGroup"]
-    },
-    {
-      "before": ["<leader>", "h"],
-      "commands": ["workbench.action.focusPreviousGroup"]
-    },
-    {
-      "before": ["<leader>", "f"],
-      "after": ["<leader>", "<leader>", "f"]
-    },
-    {
-      "before": ["<leader>", "F"],
-      "after": ["<leader>", "<leader>", "F"]
     },
     {
       "before": ["<leader>", "m"],
@@ -91,53 +62,12 @@
     }
   ],
 
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["J"],
-      "after": ["5", "<down>"]
-    },
-    {
-      "before": ["K"],
-      "after": ["5", "<up>"]
-    }
-  ],
-
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.mouseWheelZoom": false,
-  "explorer.confirmDragAndDrop": false,
-
-  "workbench.sideBar.location": "right",
-  "workbench.editor.pinnedTabSizing": "compact",
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.enableExperiments": false,
-  "workbench.settings.enableNaturalLanguageSearch": false,
-  "update.showReleaseNotes": false,
-
-  "editor.cursorSurroundingLines": 8,
-  "editor.wordWrap": "off",
-  "diffEditor.wordWrap": "off",
-  "terminal.integrated.fontSize": 13,
-  "editor.semanticHighlighting.enabled": true,
-  "editor.accessibilitySupport": "off",
-  "terminal.integrated.fontFamily": "Menlo for Powerline, PowerlineSymbols",
-  "search.searchOnType": false,
-  "editor.scrollbar.horizontalScrollbarSize": 4,
-  "editor.scrollbar.verticalScrollbarSize": 4,
-  "workbench.editor.enablePreview": false,
-  "window.menuBarVisibility": "toggle",
-  "editor.fontSize": 15,
+  "breadcrumbs.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.lightbulb.enabled": "off",
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.statusBar.visible": false,
-  "workbench.colorTheme": "Tokyo Night",
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.density.editorTabHeight": "compact",
   "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.location": "top",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
