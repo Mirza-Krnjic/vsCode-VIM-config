@@ -140,11 +140,6 @@
     "command": "inlineChat.start",
     "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
   },
-  // {
-  //   "key": "ctrl+i",
-  //   "command": "-inlineChat.start",
-  //   "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
-  // },
   {
     "key": "ctrl+shift+h",
     "command": "-workbench.action.replaceInFiles"
@@ -162,11 +157,6 @@
   {
     "key": "ctrl+shift+h",
     "command": "workbench.panel.chat",
-    "when": "workbench.panel.chat.view.copilot.active"
-  },
-  {
-    "key": "ctrl+alt+i",
-    "command": "-workbench.panel.chat",
     "when": "workbench.panel.chat.view.copilot.active"
   }
 ]
