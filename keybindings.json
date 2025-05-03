@@ -117,15 +117,16 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+h",
-    "command": "-editor.action.startFindReplaceAction",
-    "when": "editorFocus || editorIsOpen"
+    "key": "ctrl+shift+i",
+    "command": "inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
   },
   {
-    "key": "ctrl+h",
-    "command": "-extension.vim_ctrl+h",
-    "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+    "key": "ctrl+n",
+    "command": "workbench.action.toggleStatusbarVisibility",
+    "when": "editorTextFocus"
   },
+  // Copilot keybindings
   {
     "key": "alt+\\",
     "command": "-editor.action.inlineSuggest.trigger",
@@ -134,25 +135,6 @@
   {
     "key": "ctrl+h",
     "command": "github.copilot.toggleStatusMenu"
-  },
-  {
-    "key": "ctrl+shift+i",
-    "command": "inlineChat.start",
-    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+h",
-    "command": "-workbench.action.replaceInFiles"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "workbench.action.toggleStatusbarVisibility",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+i",
-    "command": "-workbench.panel.chatEditing",
-    "when": "workbench.panel.chat.view.edits.active"
   },
   {
     "key": "ctrl+shift+h",

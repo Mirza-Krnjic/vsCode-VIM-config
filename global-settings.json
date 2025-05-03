@@ -66,8 +66,10 @@
   "editor.stickyScroll.enabled": false,
   "window.density.editorTabHeight": "compact",
   "editor.minimap.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.location": "top",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
+  "workbench.iconTheme": "material-icon-theme"
 }
