@@ -9,7 +9,9 @@
     // "editorLineNumber.foreground": "#767676",
     // "editorHoverWidget.border": "#ff0000",
     // "peekView.border": "#19d700",
-    // "peekViewResult.background": "#151515"
+    // "peekViewResult.background": "#151515",
+    // "editorIndentGuide.background1": "#ff644f17",
+    // "editorIndentGuide.activeBackground1": "#ff0303"
   },
 
   // Disables all italic fonts
